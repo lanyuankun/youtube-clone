@@ -214,13 +214,13 @@ class videoController extends Controller {
         //检查视频是否存在
         const video = await Video.findById(videoId);
         if (!video) {
-            this.ctx.throw(404, '视频不存在')
+            this.ctx.throw(404, '视频不存在33')
         }
 
         const comment = await Comment.findById(commentId)
 
         if (!comment) {
-            this.ctx.throw(404, '评论不存在2')
+            this.ctx.throw(404, '评论不存在4442')
         }
 
         //检测评论作者是否为当前登录用户
