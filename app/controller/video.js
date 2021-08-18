@@ -220,7 +220,7 @@ class videoController extends Controller {
         const comment = await Comment.findById(commentId)
 
         if (!comment) {
-            this.ctx.throw(404, '评论不存在')
+            this.ctx.throw(404, '评论不存在2')
         }
 
         //检测评论作者是否为当前登录用户
